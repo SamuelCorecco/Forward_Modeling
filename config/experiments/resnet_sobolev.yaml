@@ -1,0 +1,18 @@
+experiment_name: "resnet_sobolev_v1"
+output_dir: "results/"
+model_type: "resnet"  
+
+dataset:
+  path: "Dataset/atmoFe.npz"
+  seed: 42
+  fixed_size: 100
+
+resnet:
+  hidden_dim: 256      
+  n_blocks: 4           
+  
+  epochs: 100           
+  batch_size: 512       
+  learning_rate: 0.001  
+  
+  derivative_weight: 5.0 

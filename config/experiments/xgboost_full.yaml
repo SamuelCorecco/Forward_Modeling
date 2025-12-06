@@ -1,0 +1,19 @@
+experiment_name: "xgboost_full_baseline"
+output_dir: "results/"
+model_type: "xgboost_full"
+
+dataset:
+  path: "Dataset/atmoFe.npz"
+  seed: 42
+  fixed_size: 100
+
+
+
+xgboost:
+  n_estimators: 100
+  max_depth: 12 
+  learning_rate: 0.05
+  subsample: 0.8
+  colsample_bytree: 0.8
+  tree_method: "hist"  
+  verbosity: 0

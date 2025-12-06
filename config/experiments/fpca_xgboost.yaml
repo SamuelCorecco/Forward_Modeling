@@ -1,0 +1,19 @@
+experiment_name: "fpca_xgboost_baseline_v1"
+output_dir: "results/"
+
+dataset:
+  path: "Dataset/atmoFe.npz"   
+  seed: 42
+  fixed_size: 100           
+
+fpca:
+  var_ratio: 0.99           
+
+xgboost:
+  n_estimators: 300
+  max_depth: 6
+  learning_rate: 0.05
+  subsample: 0.8
+  colsample_bytree: 0.8
+  tree_method: "hist"       
+  n_jobs: -1                

@@ -1,0 +1,22 @@
+experiment_name: "paper2008_replica_v1"
+output_dir: "results/"
+model_type: "paper_mlp" 
+
+dataset:
+  path: "Dataset/atmoFe.npz"
+  seed: 42
+  fixed_size: 100
+
+pca:
+  n_components: 0.99 
+
+mlp:
+  activation: "logistic" 
+  solver: "adam"
+  max_iter: 2000
+  early_stopping: true
+  validation_fraction: 0.1
+  random_state: 42
+  
+  architecture_IV: [50, 35]
+  architecture_QU: [55, 55]

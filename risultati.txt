@@ -1,0 +1,64 @@
+
+
+XGB fPCA
+
+Tempo predizione (tutto test set, 78185 campioni): 1.3303s
+
+Metriche (senza maschere):
+Stokes     RMSE  Deriv Correlation
+     I 0.010301           0.977546
+     Q 0.006519           0.815354
+     U 0.006161           0.804421
+     V 0.007711           0.907295
+
+
+100 000
+
+
+XGB Diretto XGB 100 12
+Tempo predizione (tutto test set, 78185 campioni): 22.7330s
+Tempo predizione (1 profilo): 6.230142s
+Stokes     RMSE  Deriv Correlation
+     I 0.003349           0.999514
+     Q 0.007485           0.872000
+     U 0.007464           0.862150
+     V 0.007036           0.942693
+
+
+     
+
+MPL paper
+Tempo predizione (tutto test set, 78185 campioni): 0.4908s
+Tempo predizione (1 profilo): 0.000673s
+
+Metriche (senza maschere):
+  Stokes      RMSE  DerivCorr
+0      I  0.024651   0.979330
+1      Q  0.010660   0.883474
+2      U  0.008500   0.890000
+3      V  0.016862   0.916531
+
+
+
+
+
+
+
+
+
+
+# SHIFT
+Metriche (senza maschere):
+Stokes     RMSE  Deriv Correlation
+     I 0.038658           0.773228
+     Q 0.012250           0.544134
+     U 0.011331           0.514842
+     V 0.013070           0.796520
+
+
+etriche (senza maschere):
+  Stokes      RMSE  DerivCorr
+0      I  0.139018   0.648432
+1      Q  0.021953   0.545662
+2      U  0.022004   0.509198
+3      V  0.046451   0.747603
