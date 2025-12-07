@@ -1,4 +1,4 @@
-experiment_name: "resnet_sobolev_v1"
+experiment_name: "resnet_sobolev"
 output_dir: "results/"
 model_type: "resnet"  
 

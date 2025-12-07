@@ -1,4 +1,4 @@
-experiment_name: "xgboost_full_baseline"
+experiment_name: "xgboost_full"
 output_dir: "results/"
 model_type: "xgboost_full"
 

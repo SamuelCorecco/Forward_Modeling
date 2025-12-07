@@ -1,4 +1,4 @@
-experiment_name: "paper2008_replica_v1"
+experiment_name: "paper2008"
 output_dir: "results/"
 model_type: "paper_mlp" 
 

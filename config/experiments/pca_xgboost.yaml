@@ -1,4 +1,4 @@
-experiment_name: "pca_xgboost_v1"
+experiment_name: "pca_xgboost"
 output_dir: "results/"
 model_type: "pca_xgboost"
 

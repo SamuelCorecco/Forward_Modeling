@@ -1,4 +1,4 @@
-experiment_name: "fpca_xgboost_baseline_v1"
+experiment_name: "fpca_xgboost"
 output_dir: "results/"
 
 dataset:
