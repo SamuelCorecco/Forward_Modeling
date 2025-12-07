@@ -51,6 +51,7 @@ def main():
     print(f"Training completed in {train_time_sec:.2f}s")
 
     print("\n--- Prediction & Benchmarking ---")
+    print(f"Starting evaluation on {len(X_test)} samples...")
     t0 = time.time()
     y_pred_full = model.predict(X_test)
     total_pred_time = time.time() - t0

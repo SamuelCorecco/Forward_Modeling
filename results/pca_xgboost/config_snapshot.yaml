@@ -2,7 +2,7 @@ dataset:
   fixed_size: 100
   path: Dataset/atmoFe.npz
   seed: 42
-experiment_name: pca_xgboost_v1
+experiment_name: pca_xgboost
 model_type: pca_xgboost
 output_dir: results/
 pca:

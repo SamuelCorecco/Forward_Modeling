@@ -116,7 +116,7 @@ class MultiResNetWrapper(BaseEstimator, RegressorMixin):
                  epochs=100, 
                  deriv_weight=1.0, 
                  patience=10, 
-                 random_state=42, # <--- 1. NUOVO PARAMETRO
+                 random_state=42, 
                  device=None):
         
         self.hidden_dim = hidden_dim
@@ -126,7 +126,7 @@ class MultiResNetWrapper(BaseEstimator, RegressorMixin):
         self.epochs = epochs
         self.deriv_weight = deriv_weight
         self.patience = patience
-        self.random_state = random_state # <--- 2. SALVALO
+        self.random_state = random_state
         
         if device:
             self.device = torch.device(device)
@@ -171,11 +171,8 @@ class MultiResNetWrapper(BaseEstimator, RegressorMixin):
             train_size = int(0.9 * len(full_dataset))
             val_size = len(full_dataset) - train_size
             
-            # --- 3. FIX RANDOM SPLIT DETERMINISTICO ---
-            # Creiamo un generatore specifico con il seed della config
             generator = torch.Generator().manual_seed(self.random_state)
             train_ds, val_ds = random_split(full_dataset, [train_size, val_size], generator=generator)
-            # ------------------------------------------
             
             train_loader = DataLoader(train_ds, batch_size=self.batch_size, shuffle=True)
             val_loader = DataLoader(val_ds, batch_size=self.batch_size*2, shuffle=False) 
