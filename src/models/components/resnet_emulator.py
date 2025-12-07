@@ -49,10 +49,6 @@ class StokesResNet(nn.Module):
 
 class PhysicsLoss(nn.Module):
     def __init__(self, derivative_weight=1.0, **kwargs):
-        """
-        Accetta **kwargs per ignorare argomenti extra come 'stokes_weights' 
-        se passati per sbaglio da wrapper diversi.
-        """
         super().__init__()
         self.lambda_d = derivative_weight
         self.mse = nn.MSELoss()
